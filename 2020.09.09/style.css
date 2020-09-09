@@ -1,0 +1,32 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: lightblue;
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+    background-color: beige;
+  }
+
+  h1, div .ketto{
+      background-color: coral;
+  }
+  div{
+      margin: 5px 10px 15px 20px; 
+      border-left-style:double; 
+      border: 5px dotted rgb(110, 110, 161);
+      padding: 5px;
+  }
+
+  #egyedi{
+      color: darkblue;
+      font-size: 30px;
+  }
