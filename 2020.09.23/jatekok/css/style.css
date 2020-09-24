@@ -1,0 +1,20 @@
+html{
+    background-color: wheat;
+    color: #8B4513;
+    text-align: justify;
+}
+
+h1{
+    text-align: center;
+}
+
+.kep{
+    height: 200px;
+}
+
+.igazitas{
+    text-align: center;
+}
+span{
+    font-style: italic;
+}

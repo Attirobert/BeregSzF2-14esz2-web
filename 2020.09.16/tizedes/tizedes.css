@@ -1,0 +1,25 @@
+body{
+    color: white;
+    background-image: url("images/hatter.png");
+}
+
+table.first{
+    width: 1000px;
+    border: 0;
+}
+
+.kozepre{
+    text-align: center;
+}
+
+.sorki{
+    text-align: justify;
+}
+
+.jobbra{
+    text-align: right;
+}
+
+hr{
+    width: 80%;
+}

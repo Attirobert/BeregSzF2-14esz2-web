@@ -1,0 +1,50 @@
+*
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+body 
+{
+  background-image: url('hatter.png');
+  color: white;
+  width: 1000px;
+}
+table 
+{
+  width: 1000px;
+}
+.tablazat 
+{
+  margin: 5px;
+  padding: 0px;
+}
+.szeles
+{
+  width: 120px;
+}
+.igazit
+{
+  text-align: center;
+}
+br
+{
+  color: white;
+}
+.marg 
+{
+  margin: 5px;
+}
+hr 
+{
+  text-align: center;
+}
+.szoveg 
+{
+  text-align: justify;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+.padright
+{
+  text-align: right;
+}
