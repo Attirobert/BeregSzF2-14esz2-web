@@ -1,0 +1,80 @@
+a {
+    color: #C0C0C0;
+}
+
+a:visited {
+    color: #C0C0C0;
+}
+
+a:active {
+    color: #C0C0C0;
+}
+
+a:hover {
+    color: #C0C0C0;
+}
+
+body{
+    background-image: url("../images/hatter.png");
+}
+
+#bdindex{
+    color: black;
+}
+
+#bdtizedes{
+    color: white;
+}
+
+#first{
+    width: 1000px;
+    border: 0;
+}
+
+#second{
+    width: 100%;
+}
+
+#second th, #second td{
+    border: 1px solid;
+}
+
+.kozepre{
+    text-align: center;
+}
+
+table.kozepre{
+    align-content: center;
+    
+}
+
+.sorki{
+    text-align: justify;
+}
+
+.jobbra{
+    text-align: right;
+}
+
+hr{
+    width: 80%;
+}
+
+#kiemelt{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.filmszel{
+    width: 120px;
+}
+
+.feher{
+    background-color: white;
+}
+
+#szereplok{
+    width:630px; 
+    margin-left: auto; 
+    margin-right: auto;
+}
