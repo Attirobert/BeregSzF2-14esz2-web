@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Különleges mezők átvétele</title>
+    <meta name="Author" content="Kovács Attila">
+</head>
+
+<body>
+    <form action="01-form01.php" method="POST">
+        User: <input type="text" name="user"><br>
+        Cím: <textarea rows="5" cols="40" name="cim"></textarea><br>
+
+        <h3>Termékek<h3>
+                <select name="termekek[]" multiple>
+                    <option>Csavarhúzó</option>
+                    <option>Kalapács</option>
+                    <option>Véső</option>
+                    <option>Balta</option>
+                </select><br>
+
+                <input type="checkbox" name="termekek[]" value="Mikroszkóp">Mikroszkóp<br>
+                <input type="checkbox" name="termekek[]" value="Tricorder">Tricorder<br>
+                <input type="checkbox" name="termekek[]" value="Orac 1">Orac 1<br>
+                <input type="checkbox" name="termekek[]" value="HAL 2000">HAL 2000<br>
+                <input type="submit" value="Rendben">
+    </form>
+</body>
+
+</html>
