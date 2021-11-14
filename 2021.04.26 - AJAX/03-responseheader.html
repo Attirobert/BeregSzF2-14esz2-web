@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AJAX - headers</title>
+    <meta name="Author" content="Kovács Attila">
+    <script src="xmlhttp.js"></script>
+</head>
+
+<body>
+    <script>
+        var XMLHttp = getXmlHttp();
+
+        XMLHttp.open("GET", "uzenet.txt");
+
+        XMLHttp.onreadystatechange = handler;
+
+        XMLHttp.send(null);
+
+        function handler() {
+            if (XMLHttp.readyState == 4) {
+                var httpheaders = XMLHttp.getResponseHeader("Server");
+                window.alert("Status = " + XMLHttp.statusText);
+                window.alert("Fejlécek: " + httpheaders);
+            }
+        }
+    </script>
+</body>
+
+</html>

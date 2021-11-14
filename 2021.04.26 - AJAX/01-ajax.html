@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>AJAX-HTML példa</title>
+    <meta name="Author" content="Kovács Attila">
+    <script>
+        function loadDoc(){
+            // Objektum példány létrehozása
+            var xhttp = new XMLHttpRequest();
+
+            // A tevékenység megadása a válasz beérkezése után
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200){
+                    document.getElementById("demo").innerHTML = this.responseText;
+                }
+            }
+
+            // A HTTP metódus és url megadása
+            xhttp.open("GET", "01-ajax.txt", true);
+
+            // Kérés elküldése
+            xhttp.send();
+        }
+    </script>
+</head>
+<body>
+<div id="demo">
+    <h2>Ez a szöveg AJAX hívással lecserélhető</h2>
+    <button type="button" onclick="loadDoc()">A szöveg cseréje</button>
+</div>
+</body>
+</html>

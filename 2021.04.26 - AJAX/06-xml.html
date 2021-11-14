@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AJAX - xml</title>
+    <meta name="Author" content="Kovács Attila">
+    <script src="xmlhttp.js"></script>
+</head>
+
+<body>
+    <script>
+        var XMLHttp = getXmlHttp();
+
+        XMLHttp.open("GET", "konyvek.xml");
+
+        XMLHttp.onreadystatechange = handler;
+
+        XMLHttp.send(null);
+
+        function handler() {
+            if (XMLHttp.readyState == 4) {
+                var xml = XMLHttp.responseXML;
+                var konyv = xml.getElementsByTagName("konyv")[0];
+                var pubdate = konyv.getAttribute("pubdate");
+                var title, publisher;
+                //window.alert("Node-ok száma = "+ konyv.childNodes.length );
+                for (var i = 0; i < konyv.childNodes.length; i++){
+                    if (konyv.childNodes[i].nodeName == "title") 
+                        {title = konyv.childNodes[i].innerHTML;}
+                    else if  (konyv.childNodes[i].nodeName == "publisher") 
+                        { publisher = konyv.childNodes[i].innerHTML; }
+                }
+                window.alert("A könyv címe: "+title+"\nkiadója: "+publisher+"\nkiadva: "+pubdate);
+            }
+
+        }
+    </script>
+</body>
+
+</html>

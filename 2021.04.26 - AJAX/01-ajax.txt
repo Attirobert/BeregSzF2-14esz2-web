@@ -1,0 +1,2 @@
+<p>Ajax <font color=#000099>nem programozási nyelv</font></p>
+<p>Az AJAX egy technika a gyors, dinamikus weblapok elkészítéséhez.</p>
